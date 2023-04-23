@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="HeaderView" customModule="vk" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eJ5-UY-uj8">
+                    <rect key="frame" x="25" y="21.666666666666664" width="70" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="fPt-xz-HMO"/>
+                        <constraint firstAttribute="height" constant="70" id="uUI-Lb-o9b"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Profile Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rae-aj-coL">
+                    <rect key="frame" x="115" y="20" width="105" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x27-yq-C1d">
+                    <rect key="frame" x="115" y="71" width="85" height="19"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" systemColor="systemGray2Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rae-aj-coL" firstAttribute="leading" secondItem="eJ5-UY-uj8" secondAttribute="trailing" constant="20" id="0Gx-sz-XDL"/>
+                <constraint firstItem="x27-yq-C1d" firstAttribute="top" secondItem="rae-aj-coL" secondAttribute="bottom" constant="30" id="1hl-vC-p68"/>
+                <constraint firstItem="eJ5-UY-uj8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="Cj3-zL-EAb"/>
+                <constraint firstItem="rae-aj-coL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="GRc-t8-XV7"/>
+                <constraint firstAttribute="bottom" secondItem="eJ5-UY-uj8" secondAttribute="bottom" constant="20" id="Gpk-xd-dun"/>
+                <constraint firstAttribute="bottom" secondItem="x27-yq-C1d" secondAttribute="bottom" constant="20" id="M2b-no-vL3"/>
+                <constraint firstItem="x27-yq-C1d" firstAttribute="leading" secondItem="eJ5-UY-uj8" secondAttribute="trailing" constant="20" id="gW9-we-1pJ"/>
+                <constraint firstItem="eJ5-UY-uj8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="wYo-WM-R8O"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="64.885496183206101" y="252.81690140845072"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="person.crop.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
